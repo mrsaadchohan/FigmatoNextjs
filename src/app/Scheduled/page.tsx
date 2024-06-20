@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React, { useState } from "react";
 import Sidebar from "../components/Sidebar";
 import { FaGreaterThan, FaLessThan, FaRegEdit } from "react-icons/fa";
@@ -38,16 +38,16 @@ function Scheduled() {
               <h1 className="text-slate-500 pt-1">09:00 AM</h1>
               <div className="w-full mx-auto bg-white p-2 mt-2">
                 <p className="text-[10px] text-slate-500">
-                  Last edited Jan 2,2024, 12:25  .
+                  Last edited Jan 2,2024, 12:25 .
                 </p>
                 <p className="text-[10px] text-slate-500">987 characters</p>
                 <h6 className="mt-7 text-[11px]">
                   Founders and sales leaders, listen up
                 </h6>
                 <h6 className="text-[10px] mt-4">
-    Every deal/oppurtunity in your CRM should have a &quot;next step
-    date&quot; field and a &quot;next&quot;
-</h6>
+                  Every deal/oppurtunity in your CRM should have a &quot;next
+                  step date&quot; field and a &quot;next&quot;
+                </h6>
               </div>
               <div className="flex justify-center">
                 <Image
@@ -111,7 +111,6 @@ function Scheduled() {
             </div>
           </div>
           <div>
-           
             <div className="bg-slate-100 p-3 rounded-xl ">
               <h1 className="text-slate-500 pt-1">09:00 AM</h1>
               <div className="flex justify-center items-center mt-20">
@@ -123,12 +122,9 @@ function Scheduled() {
               </div>
             </div>
           </div>
-
         </div>
 
-        <div>
-
-        </div>
+        <div></div>
       </div>
     </div>
   );

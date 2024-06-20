@@ -5,8 +5,7 @@ import Draft from "./components/Draft";
 export default function Home() {
   return (
     <div>
-      {/* <Sidebar/> */}
-    <Draft/>
+      <Draft />
     </div>
   );
 }

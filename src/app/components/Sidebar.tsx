@@ -2,25 +2,24 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-const Links=[
+const Links = [
   {
-    name:'Drafts',
-    link:'/',
+    name: "Drafts",
+    link: "/",
   },
   {
-    name:'Sheduled',
-    link:'/Scheduled',
+    name: "Sheduled",
+    link: "/Scheduled",
   },
   {
-    name:'Published',
-    link:'/Published',
+    name: "Published",
+    link: "/Published",
   },
   {
-    name:'Insights',
-    link:'/',
+    name: "Insights",
+    link: "/",
   },
-  
-]
+];
 
 const Sidebar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -123,7 +122,7 @@ const Sidebar = () => {
                   width={20}
                   height={20}
                 />
-                
+
                 <span className="flex-1 ms-3 text-[16px] whitespace-nowrap">
                   My Post
                 </span>
@@ -245,21 +244,15 @@ const Sidebar = () => {
           </div>
         </div>
         <ul className="flex md:gap-x-7 gap-x-4 md:text-[16px] text-[12px] pt-10">
-          {Links.map((data,id)=>
-          {
-            return(
+          {Links.map((data, id) => {
+            return (
               <div key={id}>
-                <Link href={data.link}>
-                {data.name}
-                </Link>
+                <Link href={data.link}>{data.name}</Link>
               </div>
-            )
+            );
           })}
-          
         </ul>
-        <div className="border-b-2 mt-4">
-
-        </div>
+        <div className="border-b-2 mt-4"></div>
       </div>
     </div>
   );
